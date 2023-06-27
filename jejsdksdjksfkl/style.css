@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+:root{
+    --bs-dark-color: #1a1d20;
+    --bs-dark-primary: #1c1c1c;
+    --bs-main-color: #fff;
+    --bs-primary-color: #c6c6c6;
+    --bs-secondary-color: #29a9fd;
+    --bs-supporting-color: #c85060;
+
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Jost', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #091E3E;
+}
+
+.h2, h2{
+    font-size: calc();
+}
+
+h1{
+    font-size: 3.5rem;
+    color: var(--bs-main-color);
+    
+}
+
+h2{
+    line-height: 3.2rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+
+p{
+    margin: 0 19px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--bs-body-color);
+    letter-spacing: 0.06rem;
+    line-height: 1.70rem;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+a{
+    color: #06A3DA;
+    font-weight: 300;
+    font-size: 2rem;
+    text-decoration: none;
+    letter-spacing: 0.02rem;
+}
+
+li{
+    list-style: none;
+}
+
+button, a{
+    font-size: 1rem!important;
+    letter-spacing: 0.02rem;
+    word-spacing: 0.2rem;
+}
+
+.common-heading{
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem!important;
+}
+
+.common-title{
+    margin-bottom: 4.2rem;
+}
+
+/* navbar */
+.nav-link{
+    color: var(--bs-dark-color);
+    font-weight: bold;
+}
+
+.nav-link:hover{
+    color: var(--bs-secondary-color) !important;
+}
+
+.navbar-toggler{
+    margin: auto;
+    background: #fff;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: box-shadow 0.15s ease-in-out;
+
+}
+.navbar-nav a{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-light .navbar-brand{
+    padding: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: var(--bs-secondary-color);
+}
+.fa, .fas {
+    font-weight: 900;
+    font-size: 2rem;
+}
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.navbar-light .navbar-brand:focus
+.navbar-light .navbar-brand:hover{
+    color: var(--bs-dark-color);
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link.active {
+    color: var(--bs-secondary-color);
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: var(--bs-dark-color);
+}
+.navbar-light .navbar-nav .nav-link:focus
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--bs-dark-color);
+}
+
+@media only screen and(max-width: 568px){
+    
+
+    .navbar-nav{
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .carousel-inner{
+        width: 100%;
+        
+    }
+    .carousel-caption h5{
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 10px;
+    }
+    .container .row{
+        width: 100%;
+       }
+       
+}
+@media screen and (max-width: 570px) {
+    .carousel-inner .carousel-caption{
+     width: 100%;
+    }
+    .navbar-brand{
+     justify-content: center;
+    }
+    
+     .navbar-nav{
+        margin: auto;
+     }
+    
+    .container-fluid{
+     width: 100%;
+    }
+    .container-fluid .fab{
+        width: fit-content;
+    }
+   
+   
+    
+ }
+ @media screen and (max-width: 300px) {
+    .carousel-inner{
+     width: 100%;
+    }
+   
+    .more-info-section{
+        width: 100%;
+    }
+    .more-info-section .container .h2{
+        font-size: 0.3rem;
+        margin-left: 40px;
+        margin-right: 40px;
+
+    }
+    .more-info-section .container .h6{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .container .row{
+        width: 80%;
+        margin: auto;
+    }
+    .container-fluid{
+        width: auto;
+       }
+   
+    
+      
+
+}
+
